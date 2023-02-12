@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int hammingWeight(uint32_t num) {
+      /*$ To count no. of 1 bits for given Integer number $
+      
+      int count=0,oneBit=0;;
+      while(num!=0){
+        oneBit=num%2; 
+        if(oneBit==1)
+          count++;
+        num=num/2;
+       } */
+       
+    //```````````````````
+    //for binary
+    
+    int count=0;
+    while(num!=0){
+      if(num&1)    //checking last bit i.e. if 1 then count+1
+      {
+          count++;
+      }
+      num>>=1;   //else shift 1 bit right
+    }
+    return count;
+    }
+};
