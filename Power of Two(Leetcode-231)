@@ -1,0 +1,31 @@
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+    
+    //Brute Force :- 3ms
+    //Calculate all power of 2 bet. 2^0-31..And match using pow()
+     /*  for(int i=0; i<31 ; i++)
+        {
+         if(n==pow(2,i))
+           return true;   
+        }
+        return false;*/
+        
+
+    //Other optimal way :- 0ms
+   
+   int val=1;
+   for(int i=0; i<=30 ; i++) //Max upto 2^31 is range in c
+   {
+    if(n==val)
+     return true;
+   
+   //Boundary case val must to exceeds 2^30; Since MAX is 2^31
+    if(val<INT_MAX/2)   
+      val=val*2; //checks for all powers staring from 0 to 31
+   
+  }
+  
+  return false;
+  }
+};
