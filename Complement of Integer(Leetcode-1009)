@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int bitwiseComplement(int n) {
+        int mask=0,num=n;
+        //edge case; if i/p is only 0
+        if(n==0)
+          return 1;
+        //calculate required MASK(all 1s), 
+        //similar concept from Subnet mask.
+        while(num!=0)
+        {
+         mask= mask<<1|1;//Increasing the size of Mask by left shift and OR op
+         num=num>>1;//Decreasing the bits in Num by right shift
+                    //doing this for all bits in Num
+        }
+        
+        //Getting the required bits for any Num
+        int complementValue=(~n)&mask; // if mask &(~n) <-- takes 3ms else before takes 0ms
+       return complementValue;
+    }
+};
+//T(n)=O(1)=S(n)
