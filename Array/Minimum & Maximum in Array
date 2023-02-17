@@ -1,0 +1,18 @@
+//Find MIN and MAX
+void Max_MinElement()
+{
+  int arr[]={4,56,-6,12,0,230};
+  
+  int max=INT_MIN,min=INT_MAX;
+  int n=sizeof(arr)/sizeof(arr[0]);
+  
+  for(int i=0 ; i<n ;i++){
+    if(arr[i]>max)
+      max=arr[i];
+      
+    if(arr[i]<min)
+      min=arr[i];
+  }
+  cout<<"Maximum Element:- "<<max<<"\n";
+  cout<<"Minimum Element:- "<<min;
+}
