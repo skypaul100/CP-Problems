@@ -1,0 +1,30 @@
+//Find Unique(long method)
+int findUniqueElement()
+{
+  int arr[]={4,9,3,9,1},i,j;
+  int size=sizeof(arr)/sizeof(arr[0]);
+  int unique;
+  
+  for(i=0 ; i<size ; i++)
+  {
+    unique=arr[i];
+    for(j=0; j<size ; j++)
+    {
+     if(unique==arr[j] && i!=j)
+       break;
+    } 
+    if(j==size)
+      return unique;
+  }return -1;
+}
+
+//Find Unique using XOR ^
+int findUniqueUsingXOR()
+{
+ int arr[]={4,9,3,9,4};
+ int size=sizeof(arr)/sizeof(arr[0]);
+ int uniXor;
+ for(int i=0 ; i<size; i++)
+   uniXor=uniXor^arr[i];
+  return uniXor;
+}
