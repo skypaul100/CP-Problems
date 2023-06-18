@@ -1,4 +1,24 @@
 //codeStudio: check if string is Palindrome
+//note: Given input parameter is in Strings
+bool isPalindrome(string &str)
+{
+	//Approach: similar to reversing, matching 1 and last; 2nd and last 2nd...
+
+	int s=0;
+	int e=str.length()-1; // full length of string
+
+	while(s<e)
+	{
+		if(str[s]!=str[e])
+		  return false;
+
+		else{
+			s++;
+			e--;
+		}
+	}return true;
+
+}
 
 
 /***** Full Palindrome Solution******/
