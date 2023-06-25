@@ -1,4 +1,4 @@
-//Bit Manipulation
+//Using Bit Manipulation
 
 int findUnique(int *arr, int size)
 {
