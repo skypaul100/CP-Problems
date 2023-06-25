@@ -1,5 +1,7 @@
 
 //reverse an array 0 to n : codestudio
+//Time= O(n)
+//Space= O(1)
 void reverseArray(vector<int> &arr , int m)
 {
 	
