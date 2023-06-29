@@ -2,7 +2,7 @@
 //Time= O(n^2)
 //Space= O(n^2)
 
-#include <iostream>
+#include <iostream>//code
 using namespace std;
 
 void printSum(int ar[][3],int r,int c)
