@@ -1,4 +1,4 @@
-//Binary search basiccode + codestudio question
+//Binary search basiccode + codestudio question + 703.leetcode question
 //Time= O(log n)
 //Space= O(n)
 
@@ -34,7 +34,7 @@ void print(int *arr,int n)
 
 int main() {
     
-    int arr[]={0,1,4,3,5,2};
+    int arr[]={0,1,2,3,4,5}; // Array must be sorted
     int n=6;
     int val=4;
     print(arr,n);
