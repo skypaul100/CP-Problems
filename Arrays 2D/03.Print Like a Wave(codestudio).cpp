@@ -1,4 +1,4 @@
-//codeStudio: Print like a wave
+//codeStudio: Print matrix like a wave 
 //Ex- 1 2 3
 //    4 5 6
 //op= 1 4 5 2 3 6
