@@ -1,4 +1,7 @@
-  void rotate(vector<int>& nums, int k) {
+//leetcode(easy): 189.Rotate Array by K pos
+//Time: O(n)
+//Space: O(n)
+void rotate(vector<int>& nums, int k) {
 
         int n=nums.size();
         vector<int> temp(nums.size());
